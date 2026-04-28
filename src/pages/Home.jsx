@@ -91,20 +91,20 @@ function HeroSection() {
       {/* White base at bottom for wave transition */}
       <div className="absolute bottom-0 left-0 right-0 h-20 z-10 pointer-events-none bg-white" />
 
-      <div className="container-wide relative z-20 pt-28 pb-40">
+      <div className="container-wide relative z-20 pt-24 pb-28 md:pt-28 md:pb-40">
         <div className="flex items-start justify-between gap-8">
           <div className="max-w-2xl flex flex-col gap-6">
             <div><GoogleReviewsPill /></div>
-            <div className="section-label" style={{ color: 'rgba(251,229,250,0.75)' }}>
-              <span className="w-6 h-px bg-white/40 inline-block" />
+            <div className="section-label flex-wrap" style={{ color: 'rgba(251,229,250,0.75)' }}>
+              <span className="w-6 h-px bg-white/40 inline-block flex-shrink-0" />
               Beauty Specialist · Wellness &amp; Massage · Dubai Marina
             </div>
             <h1 className="font-serif leading-[1.05] text-balance">
-              <span className="block text-3xl md:text-4xl text-white/80"
+              <span className="block text-2xl sm:text-3xl md:text-4xl text-white/80"
                 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontWeight: 300, fontStyle: 'italic', letterSpacing: '0.04em' }}>
                 Your body
               </span>
-              <span className="block text-6xl md:text-7xl lg:text-8xl" style={{
+              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl" style={{
                 background: 'linear-gradient(135deg, #F9D0ED 0%, #F162ED 45%, #D4A8C7 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
@@ -425,7 +425,7 @@ function FeaturedTreatments() {
             <Link
               key={item.id}
               to={item.to}
-              className="relative overflow-hidden rounded-2xl group block h-44">
+              className="relative overflow-hidden rounded-2xl group block h-52 sm:h-56">
               <img
                 src={item.image}
                 alt={item.title}
@@ -586,10 +586,10 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <FeaturedTreatments />
       <ReviewsSection />
       <WhyAura />
       <BrandExperience />
-      <FeaturedTreatments />
       <SPASection />
       <CTASection />
     </>

@@ -89,9 +89,9 @@ function HeroSection() {
       }} />
 
       {/* White base at bottom for wave transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 z-10 pointer-events-none bg-white" />
+      <div className="absolute bottom-0 left-0 right-0 h-8 z-10 pointer-events-none bg-white" />
 
-      <div className="container-wide relative z-20 pt-24 pb-28 md:pt-28 md:pb-40">
+      <div className="container-wide relative z-20 pt-24 pb-12 md:pt-28 md:pb-16">
         <div className="flex items-start justify-between gap-8">
           <div className="max-w-2xl flex flex-col gap-6">
             <div><GoogleReviewsPill /></div>
